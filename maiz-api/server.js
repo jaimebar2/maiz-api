@@ -117,11 +117,12 @@ app.post(
       res.json({
         ok: true,
         token,
-        usuario: {
-          id: usuario.id,
-          nombre: usuario.nombre,
-          correo: usuario.correo,
-        },
+       usuario: {
+        id: usuario.id,
+        nombre: usuario.nombre,
+        correo: usuario.correo,
+        rol: usuario.rol,
+},
       })
     } catch (error) {
       console.log(error)
